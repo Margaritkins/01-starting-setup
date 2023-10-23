@@ -1,21 +1,18 @@
 import React from "react";
-import "../ExpenseItem/index.css";
 import ExpenseDate from "./ExpenseDate";
+import Cards from "../Cards";
+import "../ExpenseItem/index.css";
 
 const ExpenseItem = (props) => {
-  
   return (
     <>
-      <div className="expense-item">
-        
-          <ExpenseDate date={props.date}/>
-        
-
+      <Cards className="expense-item">
+        <ExpenseDate date={props.date} />
         <div className="expense-item__description">
           <h2>{props.title}</h2>
           <div className="expense-item__price">{props.amount}</div>
         </div>
-      </div>
+      </Cards>
     </>
   );
 };

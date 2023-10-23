@@ -1,31 +1,33 @@
 import React from "react";
 import "./style.css";
 import ExpenseItem from "../ExpenseItem";
+import Cards from "../Cards";
 
-const ListOfExpenses = ({expenses}) => {
+const ListOfExpenses = (props) => {
   return (
-    <div className="expenses">
+    <Cards className="expenses">
       <ExpenseItem
-        title={expenses[0].title}
-        date={expenses[0].date}
-        amount={expenses[0].amount}
+        title={props.expenses[0].title}
+        date={props.expenses[0].date}
+        amount={props.expenses[0].amount}
+
       />
       <ExpenseItem
-        title={expenses[1].title}
-        date={expenses[1].date}
-        amount={expenses[1].amount}
+        title={props.expenses[1].title}
+        date={props.expenses[1].date}
+        amount={props.expenses[1].amount}
       />
       <ExpenseItem
-        title={expenses[2].title}
-        date={expenses[2].date}
-        amount={expenses[2].amount}
+        title={props.expenses[2].title}
+        date={props.expenses[2].date}
+        amount={props.expenses[2].amount}
       />
       <ExpenseItem
-        title={expenses[3].title}
-        date={expenses[3].date}
-        amount={expenses[3].amount}
+        title={props.expenses[3].title}
+        date={props.expenses[3].date}
+        amount={props.expenses[3].amount}
       />
-    </div>
+    </Cards>
   );
 };
 

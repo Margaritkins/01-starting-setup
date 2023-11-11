@@ -1,6 +1,7 @@
 import React from "react";
 // import ExpenseItem from "./components/ExpenseItem";
 import ListOfExpenses from "./components/ListOfExpenses";
+import NewExpense from "./components/NewExpense";
 
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
   ];
   return (
     <div>
-      <h2>Let's get started!</h2>
+      < NewExpense />
       <ListOfExpenses expenses={expenses} />
     </div>
   );
